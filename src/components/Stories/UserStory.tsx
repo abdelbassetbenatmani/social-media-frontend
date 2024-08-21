@@ -15,7 +15,7 @@ export const UserStory = ({ user }: { user: User }) => {
     <CarouselItem className="rounded-[15px]">
       <div
         className="flex flex-col justify-between h-[900px] w-[523px] py-4 px-5 rounded-2xl relative bg-cover bg-center"
-        style={{ backgroundImage: `url(https://social-media-backend-phi-one.vercel.app/uploads/${user.stories[0].content})` }}>
+        style={{ backgroundImage: `url(${user.stories[0].content})` }}>
         <div>
           <ProgressBar />
           <UserInfo user={user} />
