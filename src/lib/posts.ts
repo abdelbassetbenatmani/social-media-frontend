@@ -1,4 +1,4 @@
-import { PostCardProps } from "@/components/Feeds/PostCard";
+import { PostCardProps } from "@/components/Feeds/Post/PostCard";
 
 export const posts :PostCardProps[] = [
     {
