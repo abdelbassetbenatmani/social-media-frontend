@@ -20,7 +20,7 @@ const Stories = () => {
             <span className="text-xs text-center truncate max-w-[70px]">{friend.username}</span>
 
             {/* the user can upload story */}
-            {index === 0 && <FileInputForm />}
+            {index === 0 && <FileInputForm userId={friend._id} />}
           </div>
         ))}
       </div>

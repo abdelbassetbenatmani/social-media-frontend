@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/uploads': {
-        target: 'http://localhost:3000',
+        target: 'https://social-media-backend-phi-one.ver',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/uploads/, '/uploads'),
       },

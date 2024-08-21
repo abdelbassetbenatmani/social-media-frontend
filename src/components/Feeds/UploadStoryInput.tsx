@@ -1,8 +1,12 @@
 import { useFileUpload } from "./hooks/useUploadStory";
 
 
+interface FileInputFormProps {
+  userId: string;
+}
+
 // Input for upload story
-const FileInputForm = () => {
+const FileInputForm = ({userId}:FileInputFormProps) => {
   const { handleFileChange, uploading } = useFileUpload();
   return (
     <form>
@@ -10,7 +14,7 @@ const FileInputForm = () => {
         className="hidden"
         type="file"
         accept="image/*"
-        onChange={handleFileChange}
+        onChange={(event) => handleFileChange(event, userId)}
         disabled={uploading}
         id="story"
       />

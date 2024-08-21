@@ -31,7 +31,7 @@ export const UserInfo = ({ user }: { user: User }) => {
             <span className="block font-bold material-symbols-outlined">more_vert</span>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuItem onClick={() => deleteStory(user.stories[0].id)}>
+            <DropdownMenuItem onClick={() => deleteStory(user.stories[0]._id)}>
               <span className="material-symbols-outlined">delete</span>
               <span className="font-medium">Delete</span>
             </DropdownMenuItem>

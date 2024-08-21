@@ -14,7 +14,7 @@ const useDeleteStory = () => {
 
     try {
       // Make a DELETE request to the API endpoint with the storyId
-      await axios.delete(`http://localhost:3000/api/v1/stories/${storyId}`);
+      await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/stories/${storyId}`);
       // Handle successful deletion
       toast({
         title: "Story deleted successfully",
